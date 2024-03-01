@@ -23,16 +23,15 @@ func init() {
 	connectUrl = os.Getenv("connectUrl")
 }
 
-func Connect_proxy_eth() *ethclient.Client {
+func Connect_eth() *ethclient.Client {
 	client, err := ethclient.Dial(connectUrl)
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	return client
 }
 
-func Connect_eth() *ethclient.Client {
+func Connect_proxy_eth() *ethclient.Client {
 	proxyURL, err := url.Parse("http://localhost:8889") // 你的代理地址
 	if err != nil {
 		log.Fatal(err)
