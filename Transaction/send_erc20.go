@@ -19,7 +19,7 @@ func main() {
 	from := config.Get_fromaddr()
 	pv := config.Get_pv()
 	toaddr := config.Get_toaddr()
-	Contractaddr := config.Get_cotractaddr()
+	Contractaddr := config.Get_contractaddr()
 
 	chainID, err := client.NetworkID(context.Background())
 	if err != nil {
