@@ -37,7 +37,7 @@ func Get_toaddr() common.Address {
 }
 
 func Get_cotractaddr() common.Address {
-	tokenaddr := os.Getenv("tokenAddress")
+	tokenaddr := os.Getenv("contractAddress")
 	return common.HexToAddress(tokenaddr)
 
 }
