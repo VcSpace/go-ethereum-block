@@ -14,6 +14,7 @@ import (
 )
 
 var connectUrl string
+var wssUrl string
 
 func init() {
 	err := godotenv.Load(".env")
@@ -21,6 +22,7 @@ func init() {
 		log.Fatal("Error loading .env file")
 	}
 	connectUrl = os.Getenv("connectUrl")
+	wssUrl = os.Getenv("wssUrl")
 }
 
 func Connect_eth() *ethclient.Client {
@@ -82,7 +84,7 @@ func Wss_eth() *ethclient.Client {
 		Timeout:   15 * time.Second,
 		Transport: transport,
 	})
-	rpcClient, err := rpc.DialOptions(ctx, connectUrl, httpClient)
+	rpcClient, err := rpc.DialOptions(ctx, wssUrl, httpClient)
 	if err != nil {
 		log.Fatal(err)
 	}
