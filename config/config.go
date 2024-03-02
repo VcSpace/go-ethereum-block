@@ -36,7 +36,7 @@ func Get_toaddr() common.Address {
 	return common.HexToAddress(toaddr)
 }
 
-func Get_cotractaddr() common.Address {
+func Get_contractaddr() common.Address {
 	tokenaddr := os.Getenv("contractAddress")
 	return common.HexToAddress(tokenaddr)
 
