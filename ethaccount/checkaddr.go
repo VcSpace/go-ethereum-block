@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	// 0x Protocol Token (ZRX) smart contract address
+	// smart contract address
 	client := connect.Connect_proxy_eth()
-	address := config.Get_cotractaddr()
+	address := config.Get_contractaddr()
 	bytecode, err := client.CodeAt(context.Background(), address, nil) // nil is latest block
 	if err != nil {
 		log.Fatal(err)
