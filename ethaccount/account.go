@@ -18,7 +18,6 @@ func main() {
 	}
 	fmt.Println(header.Number.String())
 
-	//查询余额
 	account := config.Get_fromaddr()
 	balance, err := client.BalanceAt(context.Background(), account, nil)
 	if err != nil {
@@ -27,7 +26,6 @@ func main() {
 
 	fmt.Println(balance)
 
-	//区块编号获取余额
 	blockNumber := big.NewInt(5361150)
 	balance2, err := client.BalanceAt(context.Background(), account, blockNumber)
 	if err != nil {
@@ -43,7 +41,6 @@ func main() {
 
 	fmt.Println(ethValue) // 16.454338331596005302
 
-	//待处理余额
 	pendingBalance, err := client.PendingBalanceAt(context.Background(), account)
 	fmt.Println(pendingBalance) // 25729324269165216042
 }
