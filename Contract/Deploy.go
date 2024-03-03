@@ -39,8 +39,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(address.Hex())   // 0x147B8eb97fD247D06C4006D269c90C1908Fb5D54
-	fmt.Println(tx.Hash().Hex()) // 0xdae8ba5444eefdc99f4d45cd0c4f24056cba6a02cefbf78066ef9f4188ff7dc0
+	fmt.Println(address.Hex())   //
+	fmt.Println(tx.Hash().Hex()) //
 
 	_ = instance
 }
