@@ -51,7 +51,7 @@ func main() {
 	auth.GasLimit = uint64(300000) // in units
 	auth.GasPrice = gasPrice
 
-	var amount *big.Int = big.NewInt(5)
+	var amount *big.Int = big.NewInt(2)
 	tx, err := instance.Store(auth, amount)
 	if err != nil {
 		log.Fatal(err)
