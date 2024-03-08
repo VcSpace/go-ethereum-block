@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"goweb3/Contract/Sol"
+	storage "goweb3/Contract/Storage"
 	"goweb3/config"
 	"goweb3/connect"
 	"log"
