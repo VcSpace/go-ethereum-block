@@ -33,6 +33,14 @@ func Connect_eth() *ethclient.Client {
 	return client
 }
 
+func Wss_eth() *ethclient.Client {
+	client, err := ethclient.Dial(wssUrl)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return client
+}
+
 func Connect_proxy_eth() *ethclient.Client {
 	proxyURL, err := url.Parse("http://localhost:8889") // 你的代理地址
 	if err != nil {
@@ -69,7 +77,7 @@ func Connect_proxy_eth() *ethclient.Client {
 	return client
 }
 
-func Wss_eth() *ethclient.Client {
+func Wss_proxy_eth() *ethclient.Client {
 	proxyURL, err := url.Parse("http://localhost:8889") // 你的代理地址
 	if err != nil {
 		log.Fatal(err)
