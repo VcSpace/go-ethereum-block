@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"goweb3/config"
-	"goweb3/connect"
+	"github.com/VcSpace/go-ethereum-block/config"
+	"github.com/VcSpace/go-ethereum-block/connect"
 	"log"
 	"math"
 	"math/big"

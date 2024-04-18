@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/VcSpace/go-ethereum-block/connect"
 	"github.com/ethereum/go-ethereum/core/types"
-	"goweb3/connect"
 	"log"
 	"math"
 	"math/big"
@@ -13,7 +13,7 @@ import (
 func main() {
 	client := connect.Connect_proxy_eth()
 
-	blockNumber := big.NewInt(5374925)
+	blockNumber := big.NewInt(19644570)
 	block, err := client.BlockByNumber(context.Background(), blockNumber)
 	if err != nil {
 		log.Fatal(err)
