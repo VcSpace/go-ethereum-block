@@ -75,6 +75,6 @@ https://mirror.xyz/rbtree.eth/B2OZSszjxD3BfI07WOuAFzzrACilxvZcgb09GYdMgng
 
 ## Infrastructure:
 
-https://chainide.com/
+[https://chainide.com/](https://remix.ethereum.org/)
 
-https://www.infura.io/
+[https://www.infura.io/](https://www.infura.io/)
